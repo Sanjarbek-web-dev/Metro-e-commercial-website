@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="col.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- navbar section starts -->
+    <div class="container b-header col-lg-12 col-sm-12 col-md-12 col-xs-12">
+        <div class="row">
+            <!-- header -->
+            <nav class="nav"><div class="second-navbar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="categories">
+                                <div class="category-btn" onclick="category()">
+                                    <i class='bx bx-menu-alt-left' id="no" ></i>
+                                    <!-- <i class="far fa-times close-category" id="yes" onclick="closeCategory()"></i> -->
+                                    <span>CATEGORIES</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="input">
+                                <input type="search" name="search" class="search-input-pl" placeholder="Search Products Here">
+                                <div class="box-input-category"><select name="choose" id="choose">
+                                    <option value="All Categories">All Categories</option>
+                                    <option value="All Categories">Covid-19</option>
+                                    <option value="All Categories">Electronics</option>
+                                    <option value="All Categories">Frame Sunglasses</option>
+                                    <option value="All Categories">Furniture</option>
+                                    <option value="All Categories">Gift Corners</option>
+                                    <option value="All Categories">Jewellery</option>
+                                    <option value="All Categories">Kid's Wear</option>
+                                    <option value="All Categories">Medical</option>
+                                    <option value="All Categories">Medical Accessuras</option>
+                                    <option value="All Categories">Men</option>
+                                    <option value="All Categories">Moder Furniture</option>
+                                    <option value="All Categories">Other Medical</option>
+                                    <option value="All Categories">Shoes</option>
+                                    <option value="All Categories">Sports</option>
+                                    <option value="All Categories">Top Rated</option>
+                                    <option value="All Categories">Toys</option>
+                                    <option value="All Categories">Women</option>
+                                </select></div>
+                                <div><i class='bx bx-search-alt-2 search-input'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <header class="header">
+                    <div class="logo">
+                        <img src="./images/metro-logo.png" alt="">
+                    </div>
+                    <div class="navbar-links" id="navbar-links">
+                        <ul>
+                            <li class="animate" onclick="addListItem()" id="add-item"><span href="">Home</span><i class='bx bxs-chevron-down'></i><i class='bx bx-plus'></i></li>
+                            <div class="home-items" id="home-items">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Home 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Home 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Home 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Home 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Home 5</a></li>
+                                    <li><a class="dropdown-item" href="#">Home 6 (Medical)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Home 7 (Furniture)</a></li>
+                                    <li><a class="dropdown-item" href="#">Home 8 (Footwear)</a></li>
+                                    <li><a class="dropdown-item" href="#">Home 9 (Sunglass)</a></li>
+                                    <li><a class="dropdown-item" href="#">Home 10 (Jewellery)</a></li>
+                                    <li><a class="dropdown-item" href="#">Home 11 (Winter)</a></li>
+                                </ul>
+                            </div>
+                            <li class="animate" onclick="addListItem1()"><span>Shop</span><i class='bx bxs-chevron-down'></i><i class='bx bx-plus'></i></li>
+                            <div class="home-items-1" id="home-items-1">
+                                <ul>
+                                    <p class="bottom-line">Shop Features</p>
+                                    <li><a class="dropdown-item" href="#">Grid View</a></li>
+                                    <li><a class="dropdown-item" href="#">List View</a></li>
+                                    <li><a class="dropdown-item" href="#">Sidebar Right</a></li>
+                                    <li><a class="dropdown-item" href="#">Sidebar Left</a></li>
+                                    <li><a class="dropdown-item" href="#">Full Width</a></li>
+                                    <li><a class="dropdown-item" href="#">Load More</a></li>
+                                    <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
+                                </ul>
+                                <ul>
+                                    <p class="bottom-line">Shop Styles</p>
+                                    <li><a class="dropdown-item" href="#">Style 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Style 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Style 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Style 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Style 5</a></li>
+                                    <li><a class="dropdown-item" href="#">Style 6</a></li>
+                                    <li><a class="dropdown-item" href="#">Style 7</a></li>
+                                </ul>
+                                <ul>
+                                    <p class="bottom-line">Product Features</p>
+                                    <li><a class="dropdown-item" href="#">Single Product 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Single Product 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Single Product 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Variable Product</a></li>
+                                    <li><a class="dropdown-item" href="#">Grouped Product</a></li>
+                                    <li><a class="dropdown-item" href="#">Left Thumbnail</a></li>
+                                    <li><a class="dropdown-item" href="#">Right Thumbnail</a></li>
+                                </ul>
+                            </div>
+                            <li class="animate" onclick="addListItem2()"><span>Pages</span><i class='bx bxs-chevron-down'></i><i class='bx bx-plus'></i></li>
+                            <div class="home-items-2" id="home-items-2">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                                    <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="#">Error 404</a></li>
+                                    <li><a class="dropdown-item" href="#">Search Result</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">My Account</a></li>
+                                    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="#">Cart</a></li>
+                                    <li><a class="dropdown-item" href="#">Checkout</a></li>
+                                </ul>
+                            </div>
+                            <li class="animate" onclick="addListItem3()"><span>Elements</span><i class='bx bxs-chevron-down'></i><i class='bx bx-plus'></i></li>
+                            <div class="home-items-3" id="home-items-3">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Accordion</a></li>
+                                    <li><a class="dropdown-item" href="#">Post</a> <i class='bx bx-chevron-right'></i></li>
+                                    <li><a class="dropdown-item" href="#">Product Slider</a></li>
+                                    <li><a class="dropdown-item" href="#">Product List</a></li>
+                                    <li><a class="dropdown-item" href="#">Product Isotope</a><i class='bx bx-chevron-right s-right'></i></li>
+                                    <li><a class="dropdown-item" href="#">Product Fullscreen</a><i class='bx bx-chevron-right c-right'></i></li>
+                                    <li><a class="dropdown-item" href="#">Section Title</a></li>
+                                    <li><a class="dropdown-item" href="#">Logo Slider</a></li>
+                                    <li><a class="dropdown-item" href="#">Video</a></li>
+                                    <li><a class="dropdown-item" href="#">Google Map</a></li>
+                                </ul>
+                            </div>
+                            <li class="animate" onclick="addListItem4()"><span>Blog</span><i class='bx bxs-chevron-down'></i><i class='bx bx-plus'></i></li>
+                            <div class="home-items-4" id="home-items-4">
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Blog-Layout 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog-Layout 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog-Layout 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Single Post</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="dropdown-item" href="#">Blog-Full Width</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog-Left Sidebar</a></li>
+                                    <li><a class="dropdown-item" href="#">Post-Full Width</a></li>
+                                    <li><a class="dropdown-item" href="#">Post-Left Sidebar</a></li>
+                                </ul>
+                            </div>
+                            <li class="animate" onclick="addListItem5()"><span>Contact</span></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-icons">
+                        <ul>
+                            <li class="closen-1"><i class='bx bx-search-alt-2' ></i></li>
+                            <li class="closen-1"><i class='bx bx-user' ></i></li>
+                            <li class="closen-1"><i class='bx bx-cart-alt' ></i><span id="bought-items-count" class="bougth-items">0</span></li>
+                            <li class="closen-1">
+                          <span class="adder-price" id="adder-price">0.00$</span>
+                        </li>
+                           <i class='bx bx-menu menu-btn' id="menu-btn" onclick="clicked()"></i>
+                        </ul>
+                    </div>
+                </header>
+                
+                <div class="categories-item" id="categories-item">
+                    <ul>
+                        <li>
+                            <ul class="d-flex item-category">
+                                <li><i class="fad fa-tshirt"></i></li>
+                                <li><a href="#">Men</a></li>
+                            </ul>
+                        </li><hr class="line-1">
+                        <li>
+                            <ul class="d-flex item-category">
+                                <li><img width="20px" src="./images/women-clothes.png" alt=""></li>
+                                <li><a href="#">Women</a></li>
+                            </ul>
+                        </li><hr class="line-1">
+                        <li>
+                            <ul class="d-flex item-category">
+                                <li><i class="fal fa-tv"></i></li>
+                                <li><a href="#">Electronics</a><i class='bx right-ch bx-chevron-right'></i></li>
+                            </ul>
+                        </li><hr class="line-1">
+                        <li>
+                            <ul class="d-flex item-category">
+                                <li><i class="fad fa-gem"></i></li>
+                                <li><a href="#">Jewellery</a></li>
+                            </ul>
+                        </li><hr class="line-1">
+                        <li>
+                            <ul class="d-flex item-category">
+                                <li><i class="fas fa-boot"></i></li>
+                                <li><a href="#">Shoes</a></li>
+                            </ul>
+                        </li><hr class="line-1">
+                        <li>
+                            <ul class="d-flex item-category">
+                                <li><img width="20px" src="./images/kids.png" alt=""></li>
+                                <li><a href="#">Kid's Wear</a></li>
+                            </ul>
+                        </li><hr class="line-1">
+                        <li>
+                            <ul class="d-flex item-category">
+                                <li><i class="fal fa-volleyball-ball"></i></li>
+                                <li><a href="#">Sports</a></li>
+                            </ul>
+                        </li><hr class="line-1">
+                        <li>
+                            <ul class="d-flex item-category">
+                                <li><i class="far fa-cars"></i></li>
+                                <li><a href="#">Toys</a></li>
+                            </ul>
+                        </li><hr class="line-1">
+                        <li>
+                            <ul class="d-flex item-category">
+                                <li><i class="fal fa-gift"></i></li>
+                                <li><a href="#">Gift Corners</a></li>
+                            </ul>
+                        </li><hr class="line-1">
+                    </ul>
+                </div>
+                <!-- <hr class="line"> -->
+            </nav>
+        </div>
+    </div>
+    <!-- navbar section end -->
+   
+    <!-- main section starts -->
+    <main>
+        <div class="banner">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="main-page">
+                  <div class="page-text">
+                    <h3>SOUNDBOX</h3>
+                    <h1>Bluetooth Speaker</h1>
+                    <p>
+                      New Modern Stylist Fashionable Men's Wearholder bag maxcan
+                      weather holder.
+                    </p>
+                    <button>explore now</button><hr class="line-explore-new">
+                  </div>
+                  <div class="page-image">
+                    <img src="./images/bluetuth-speaker.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-page">
+                  <div class="page-text">
+                    <h3>SOUNDBOX</h3>
+                    <h1>Bluetooth Speaker</h1>
+                    <p>
+                      New Modern Stylist Fashionable Men's Wearholder bag maxcan
+                      weather holder.
+                    </p>
+                    <button>explore now</button><hr class="line-explore-new">
+                  </div>
+                  <div class="page-image">
+                    <img src="./images/watch.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main-page">
+                  <div class="page-text">
+                    <h3>SOUNDBOX</h3>
+                    <h1>Bluetooth Speaker</h1>
+                    <p>
+                      New Modern Stylist Fashionable Men's Wearholder bag maxcan
+                      weather holder.
+                    </p>
+                    <button>explore now</button><hr class="line-explore-new">
+                  </div>
+                  <div class="page-image">
+                    <img src="./images/b-speaker-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </main>
+    <div class="banner-1">
+        <div class="grid-second-page">
+            <div class="f-grid">
+                <div>
+                    <h1>LED HANGER LIGHT</h1>
+                <p class="f-g-text">Trending 2019</p>
+                <hr class="line-explore">
+                </div>
+                
+                <img class="img-f" src="./images/noushnik-1.png" alt="">
+            </div>
+            <div class="s-grid">
+                <img class="s-grid-img img-s" src="./images/noushnik-2.png" alt="">
+                <div class="d-block-s-grid">
+                    <h1 class="s-g-text">HEADPHONE</h1>
+                    <p class="f-g-text text-2">Collection 2019</p>
+                    <hr class="line-explore line-ex-2">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Featured Products starts -->
+    <div class="banner-2">
+        <h2 class="feature-text-title">Featured Products</h2>
+        <div class="feature">
+            <div class="one-four">
+                <div class="grid-four-one">
+                    <img src="./images/game-glass.jpg" alt="game">
+                    <p class="game-text">Game Controller</p>
+                    <p class="game-cost"><del>$390.00</del> <span class="basic">$375.00</span></p>
+                    <button class="add-btn">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="grid-four">
+                <img src="./images/keyboard.jpg" alt="KEYBOARD">
+                <p class="game-text">Keyboard</p>
+                <p class="game-cost"><del>$390.00</del> <span class="basic">$375.00</span></p>
+                <button class="add-btn">ADD TO CART</button>
+            </div>
+            <div class="grid-four">
+                <img src="./images/speaker.jpg" alt="speaker">
+                <p class="game-text">Speaker</p>
+                <p class="game-cost basic">$80.00</p>
+                <button class="add-btn">ADD TO CART</button>
+            </div>
+            <div class="grid-four">
+                <img src="./images/headphone-3.jpg" alt="headphone">
+                <p class="game-text">Headphone</p>
+                <p class="game-cost basic">$35.00</p>
+                <button class="add-btn">ADD TO CART</button>
+            </div>
+            <div class="grid-four">
+                <img src="./images/ultra-lens.jpg" alt="game">
+                <p class="game-text">Ultra Lense</p>
+                <p class="game-cost"><span class="basic">$630.00</span></p>
+                <button class="add-btn">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="grid-four-1">
+            <div class="grid-four">
+                <img src="./images/blut.jpg" alt="game">
+                <p class="game-text">Ultra Lense</p>
+                <p class="game-cost"><span>$630.00</span></p>
+                <button class="add-btn">ADD TO CART</button>
+            </div>
+            <div class="grid-four">
+                <img src="./images/gadget.jpg" alt="game">
+                <p class="game-text">Ultra Lense</p>
+                <p class="game-cost"><span class="basic">$630.00</span></p>
+                <button class="add-btn">ADD TO CART</button>
+            </div>
+            <div class="grid-four">
+                <img src="./images/hobyist.jpg" alt="game">
+                <p class="game-text">Ultra Lense</p>
+                <p class="game-cost"><span class="basic">$630.00</span></p>
+                <button class="add-btn">ADD TO CART</button>
+            </div>
+            <div class="grid-four">
+                <img src="./images/graphic.jpg" alt="game">
+                <p class="game-text">Ultra Lense</p>
+                <p class="game-cost"><span class="basic">$630.00</span></p>
+                <button class="add-btn">ADD TO CART</button>
+            </div>
+         </div>
+    </div>
+    <!--Signup Newsletter! -->
+    <div class="banner-3">
+        <div class="signup">
+            <h1 class="signup-title">
+                Signup Newsletter!
+            </h1>
+            <p class="signup-description">It only takes a second to be the first to find out about 
+            <div class="signup-input">
+                <input type="text" name="email" class="input-place" placeholder="Your email address">
+                <button type="submit" name="submit" class="signup-submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <!-- Inspirational Posts -->
+    <div class="banner-4">
+        <div class="inspiration">
+            <h1 class="ins-title">Inspirational Posts</h1>
+        </div>
+        <div class="inspiration-grid">
+            <div class="ins-card">
+                <div class="box-image">
+                    <img src="./images/people.jpg" alt="">
+                </div>
+                <span class="absolute-date">23 Dec</span>
+                <p class="fashion">
+                    Fashion, Modern
+                </p>
+                <h2 class="ins-disciption">The City of London Wants To Have</h2>
+            </div>
+            <div class="ins-card">
+                <div class="box-image">
+                    <img src="./images/two-people.jpg" alt="">
+                </div>
+                <span class="absolute-date">23 Dec</span>
+                <p class="fashion">
+                    Fashion, Modern
+                </p>
+                <h2 class="ins-disciption">The City of London Wants To Have</h2>
+            </div>
+            <div class="ins-card">
+                <div class="box-image">
+                    <img src="./images/bloc.jpg" alt="">
+                </div>
+                <span class="absolute-date">23 Dec</span>
+                <p class="fashion">
+                    Finger Ring, Jewellery
+                </p>
+                <h2 class="ins-disciption">The City of London Wants To Have</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Pictures -->
+    <div class="banner-5">
+        <section class="pictures">
+            <div class="grid">
+              <div class="grid-box">
+                <img src="./images/first-pic.jpg" alt="">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="grid-box">
+                <img src="./images/second-pic.jpg" alt="">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="grid-box">
+                <img src="./images/third-pic.jpg" alt="">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="grid-box">
+                <img src="./images/fourth-pic.jpg" alt="">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="grid-box">
+                <img src="./images/fifth-pic.jpg" alt="">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="grid-box">
+                <img src="./images/sexth-pic.jpg" alt="">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="grid-box">
+                <img src="./images/seventh-pic.jpg" alt="">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="grid-box">
+                <img src="./images/eigth-pic.jpg" alt="">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </section>
+    </div>
+    <!-- footer starts -->
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="footer-items">
+                <ul class="footer-item-f">
+                    <li class="logo-footer-image"><img src="./images/logo-metro.png" alt=""></li>
+                    <li><i class='bx bx-location-plus before-icon' ></i>&nbsp;  59 Street, Newyork City, Rose Town, 05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rive House</li>
+                    <li><i class='bx bxs-phone-call before-icon' ></i>&nbsp; +998 90 226 64 75</li>
+                    <li><i class='bx bx-mail-send before-icon' ></i> &nbsp; info@example.com</li>
+                </ul>
+                <ul class="footer-item-f">
+                    <h2>Information</h2> <hr class="liner">
+                    <li>About Us</li>
+                    <li>Latest Post</li>
+                    <li>Selling Tips</li>
+                    <li>Advertising</li>
+                    <li>Contact Us</li>
+                </ul>
+                <ul class="footer-item-f">
+                    <h2>My Account</h2> <hr class="liner">
+                    <li>My Account</li>
+                    <li>Login/Register</li>
+                    <li>Cart</li>
+                    <li>Wishlist</li>
+                    <li>Order History</li>
+                </ul>
+                <ul class="footer-item-f">
+                    <h2>Help & Support</h2> <hr class="liner">
+                    <li>Payment</li>
+                    <li>Returns</li>
+                    <li>Delivery</li>
+                    <li>Privacy & Cookie Policy</li>
+                    <li>How To Shop</li>
+                </ul>
+            </div>
+            <hr class="line-5">
+            <div class="copyright">
+                <ul>
+                    <li class="c-text"><p>© Copyright Metro 2021. Designed and Developed by RadiusTheme</p></li>
+                </ul>
+                <ul class="icons-link">
+                    <li><i class='bx bxl-facebook' ></i></li>
+                    <li><i class='bx bxl-twitter' ></i></li>
+                    <li><i class='bx bxl-linkedin' ></i></li>
+                    <li><i class='bx bxl-youtube' ></i></li>
+                    <li><i class='bx bxl-pinterest-alt' ></i></li>
+                    <li><i class='bx bx-wifi' ></i></li>
+                </ul>
+                <ul class="payments">
+                    <li><img src="./images/payment1.png" alt=""></li>
+                    <li><img src="./images/payment2.png" alt=""></li>
+                    <li><img src="./images/payment3.png" alt=""></li>
+                    <li><img src="./images/payment4.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="move-up move-up-bottom">
+            <i class="far fa-arrow-alt-circle-up"></i>
+          </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
